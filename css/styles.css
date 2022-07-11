@@ -1,3 +1,22 @@
+/*
+ potential colors to use
+Mauve: #A96762
+
+Umber: #6F5E53
+
+Shadow: #6F5E53
+
+Persian Orange: #6F5E53
+
+English Vermillion: #D64045 
+
+Night Moon: #14365d
+
+Jet: #2d2dede
+
+Eerie Black: #181818
+
+*/
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -11,21 +30,21 @@ h2 {
 }
 
 header h2 {
-    color: #CEC8FF;
+    color: #f1f1f1;
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #615349;
 }
 
 footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
-
+/*     background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B); */
 .jumbotron {
     padding: 1rem;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, #6F5E53, #6F5E53, #615349);
     color: white;
     margin: 0px;
 }
