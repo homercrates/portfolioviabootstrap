@@ -19,6 +19,8 @@ Eerie Black: #181818
 */
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #2e2e2e;
+    color: #f1f1f1;
 }
 
 h1, h2, h3 {
