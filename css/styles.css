@@ -47,7 +47,7 @@ footer {
 }
 /*     background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B); */
 .jumbotron {
-    padding: 1rem;
+    padding: .5rem;
     background-image: linear-gradient(to right, #27211d, #887467, #52453d);
     color: white;
     margin: 0px;
