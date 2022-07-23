@@ -19,7 +19,11 @@ Eerie Black: #181818
 #6b8e23"  OLIVE DRAB  very nice color to go with blue and greys   use this later
 
 */
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     font-family: "Open Sans", sans-serif;
     background-color: #2e2e2e;
     color: #f1f1f1;
@@ -37,6 +41,46 @@ header h2 {
     color: #f1f1f1;
 }
 
+/* ----START---- this bit of seciton for the fixed background that allows content to scroll */
+.BGWrapper {
+     height: 100%;
+     line-height: 1.5;
+}
+
+.fixed-bg {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: table;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.fixed-bg h1 {
+    display: table-cell;
+    display: table;
+}
+
+.scroll-bg {
+    background-color: #0f0f0a;
+    padding: 1px 70px;
+    color: #676767;
+}
+/* bg 1 */
+.bg-1 {
+    background-image: url('../img/redmountainsforfog.png');
+  }
+/* bg 2 */
+.bg-2 {
+    background-image: url('../img/bluemountainsforfog.png');
+}
+/* bg 3 */
+.bg-3 {
+    background-image: url('../img/purpemountainsforfog.png');
+}
+/* --- END --- this bit of seciton for the fixed background that allows content to scroll */
 .navbar {
     background-color: #615349;
 }
