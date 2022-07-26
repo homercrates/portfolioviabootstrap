@@ -75,6 +75,24 @@
     <!-- background 2 here -->
     <div class="fixed-bg bg-2">
         <h1> fixed background scrolling still scrolling 2</h1>
+        <div class="cloudOne" id="cloudBehind"></div>
+        <div class="cloudOne" id="cloudMid"></div>
+        <div class="cloudOne" id="cloudFront"></div>
+
+        <svg width="0" height="0">
+            <filter id="cloudFilterBackPart">
+                <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="4" seed="100"/>
+                <feDisplacementMap in="SourceGraphic" scale="160" />
+            </filter>
+            <filter id="cloudFilterMidPart">
+                <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="2" seed="100"/>
+                <feDisplacementMap in="SourceGraphic" scale="150" />
+            </filter>
+            <filter id="cloudFilterFrontPart">
+                <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="2" seed="100" />
+                <feDisplacementMap in="SourceGraphic" scale="100" />
+            </filter>
+        </svg>
     </div>
 
     <!-- this part scrolls -->
