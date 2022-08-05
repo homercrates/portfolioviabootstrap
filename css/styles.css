@@ -94,6 +94,12 @@ footer {
   width: 70%;
   margin: 1rem; }
 
+#fakeLogin .modal-header {
+  background-color: #A96762; }
+
+#fakeLogin .modal-body {
+  color: #0f0f0a; }
+
 /* Clock CSS  Start*/
 .clock {
   width: 25rem;

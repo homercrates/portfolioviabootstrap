@@ -48,9 +48,34 @@
                     <!--  fix the resume link.. perhaps a .pdf file hosted on drop box?  make it clicking donwloads a file... MAYBE  security issues? -->
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-resume fa-lg"> Resume</i></a></li>
                 </ul>
+                <ul class="navbar-nav ml-auto">
+                    <button class="" type="button" id="loginButton">Login</button>
+                </ul>
             </div>
         </div>
     </nav>
+    
+    <!-- modal -->
+    <div class="modal fade" id="fakeLogin" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Why? just.. Why?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>    
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Seriously, what were you expecting to do? Curiosty I presume.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" > Close </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Begin body of website -->
     <div>
         <h1>display 3 best projects  then skills then the rest of the projects or so</h1>
         <p>
@@ -172,6 +197,8 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <script src=".js/main.js"></script>
+
+    <script src="./js/login.js"></script>
     <!--  clock script -->
     <script src="./js/clock.js"></script>
 </body>
