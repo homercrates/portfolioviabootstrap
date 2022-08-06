@@ -72,6 +72,18 @@ header h2 {
   background-size: fit;
   background-position: 100% 100%; }
 
+.brownskybg-1 {
+  background-image: url("../img/brownsky_01.png");
+  background-size: fit; }
+
+.brownskybg-2 {
+  background-image: url("../img/brownsky_02.gif");
+  background-size: fit; }
+
+.brownskybg-3 {
+  background-image: url("../img/brownsky_03.gif");
+  background-size: fit; }
+
 /* --- END --- this bit of seciton for the fixed background that allows content to scroll */
 .navbar {
   background-color: #615349; }

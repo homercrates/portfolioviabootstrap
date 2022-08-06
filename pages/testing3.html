@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMW Portfolio testing 3 ground</title>
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- endbuild -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;500;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="BGWrapper">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-6">
+                    <h1>Stephen Williams</h1>
+                </div>
+                <div class="col">
+                    <h2>Testing</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#smwportNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="smwportNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fa fa-home fa-lg"> Home</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html"><i class="fa fa-info fa-lg"> About</i></a></li>
+                    <li class="nav-item-active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"> Contact </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/homercrates" target="_blank"><i class="fa fa-github fa-lg"> Github</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/stephen-williams-13222a139/" target="_blank"><i class="fa fa-linkedin fa-lg"> Linked In</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-resume fa-lg"> Resume</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background 1 here -->
+    <div class="fixed-bg brownskybg-1">
+        <div>
+            contact
+        </div>
+        <h1> fixed background scrolling test stpot</h1>
+        <h3>this shoudl be the glass spot</h3>
+    </div>
+    <!-- this part scrolls -->
+    <div class="scroll-bg">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus accusamus saepe eligendi nisi minus. Atque voluptatibus reprehenderit repellendus dolorem quaerat, mollitia facilis eius laborum quibusdam nemo! Eligendi, possimus nisi?</h3>
+    </div>
+
+    <!-- background 2 here -->
+    <div class="fixed-bg brownskybg-2">
+        <h1> fixed background scrolling still scrolling 2</h1>
+        <div class="cloudOne" id="cloudBehind"></div>
+        <div class="cloudOne" id="cloudMid"></div>
+        <div class="cloudOne" id="cloudFront"></div>
+
+        <svg width="0" height="0">
+            <filter id="cloudFilterBackPart">
+                <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="4" seed="100"/>
+                <feDisplacementMap in="SourceGraphic" scale="160" />
+            </filter>
+            <filter id="cloudFilterMidPart">
+                <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="2" seed="100"/>
+                <feDisplacementMap in="SourceGraphic" scale="150" />
+            </filter>
+            <filter id="cloudFilterFrontPart">
+                <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="2" seed="100" />
+                <feDisplacementMap in="SourceGraphic" scale="100" />
+            </filter>
+        </svg>
+    </div>
+
+    <!-- this part scrolls -->
+    <div class="scroll-bg">
+        <!--  inserted  section here START  -->
+        <section id="personalProjects">
+            <div class="container py-5">
+                <div class="row mx-2 my-5 d-flex justify-content-center">
+                    <div class="col col-12 col-sm-6 text-center">
+                            <img class="container-project-image" alt="a screenshot of the app" src="../img/ducefu.png" />
+                    </div>
+                    <div class="col col-12 col-sm-6 align-self-center">
+                        <h2 class="text-center">Dice-Fu</h2>
+                        <div class="d-none d-sm-block">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse, neque voluptas vitae officiis eaque? Fugiat ducimus dolorem, at facere, sed neque, nobis cumque totam rem eaque delectus veniam mollitia?</p>
+                        </div>
+                        <div class="text-center text-sm-left">
+                            <h5>Tech:</h5>
+                            <p>Html, CSS, React JS</p>
+                        </div>
+                        <div class="text-center text-sm-left">
+                            <a class="nav-link" href="https://github.com/homercrates/merdice" target='blank'><i class="fa fa-github fa-lg"><p>Repo</p></i></a>
+                            <a class="nav-link" href="https://esemuu.com/merdice/" target='blank'><i class="fa fa-toggle-on fa-lg"><p>Play</p></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2 my-5 d-flex  justify-content-center" >
+                    <div class="col col-12 col-sm-6 text-center">
+                        <img class="container-project-image" alt="a screenshot of the app" src="../img/weatherapp.png" />
+                    </div>
+                    <div class="col col-12 col-sm-6 align-self-center order-sm-first">
+                        <h2 class="text-center">Weather App</h2>
+                        <div class="d-none d-sm-block">
+                            <p>When getting my daughter dressed for school, it was important for me to know how cold the day would start out as and how hot it would be at the end of school.  That way she could easily be prepared.  Most weather reports just show you the high and low.  I needed to know for specific times of the day.  I set an API call to get the weather at my daughters school location and then had it check the weather at drop off time 3 hours later and 3 hours after that around pick up time.  Just had to easily go to my website and look every morning.  Its not pretty, its functional.</p>
+                        </div>
+                        <div class="text-center text-sm-left">
+                            <h5>Tech</h5>
+                            <p>Html, JS, API</p>
+                        </div>
+                        <div class="text-center text-sm-left">
+                            <a class="nav-link" href="https://github.com/homercrates/WeatherSchool" target='blank'><i class="fa fa-github fa-lg"><p>Repo</p></i></a>
+                            <a class="nav-link" href="https://esemuu.com/WeatherSchool/" target='blank'><i class="fa fa-toggle-on fa-lg"><p>Play</p></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2 my-5 d-flex justify-content-center" >
+                    <div class="col col-12 col-sm-6 text-center col-sm-6">
+                        <img class="container-project-image" alt="a screenshot of the app" src="../img/comicstrip.png" />
+                    </div>
+                    <div class="col col-12 col-sm-6 align-self-center">
+                        <h2 class="text-center">Comic Strip</h2>
+                        <div class="d-none d-sm-block">
+                            <p>Used Gatsby and ReactJS hosted on Vercel.  By easily updating usn markdown it was a website where I could host an on going comic strip for some friends. It will sort by indvidual stip or by author. I rather enjoyed the structure I never polished it up visually because my friends weren't using it.  I need to fix the documentation.</p>
+                        </div>
+                        <div class="text-center text-sm-left">
+                            <h5>Tech</h5>
+                            <p>Html, Gatsby, React JS, Vercel</p>
+                        </div>
+                        <div class="text-center text-sm-left">
+                            <a class="nav-link" href="https://github.com/homercrates/comics" target='blank'><i class="fa fa-github fa-lg"><p>Repo</p></i></a>
+                            <a class="nav-link" href="https://comics-chi.vercel.app/" target='blank'><i class="fa fa-toggle-on fa-lg"><p>Play</p></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+         <!--  inserted  section here END -->
+    </div>
+
+    <!-- background 3 here -->
+    <div class="fixed-bg brownskybg-3">
+        <h1> fixed background scrolling still scrolling 3  3  3</h1>
+    </div>  
+    
+    <!-- this part scrolls -->
+    <div class="scroll-bg">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus accusamus saepe eligendi nisi minus. Atque voluptatibus reprehenderit repellendus dolorem quaerat, mollitia facilis eius laborum quibusdam nemo! Eligendi, possimus nisi?</h3>
+    </div>   
+</div>
+
+    <!-- bring in scropts here.  make sure order is jquery popper then bootstrap -->
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script></script>
+</body>
+</html>
